@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GLK8LDWBBZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GLK8LDWBBZ');
+</script>
+
+ <!--======================= UNICONS =====================-->
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+ <!--======================= SWIPER CSS ==================-->
+ <link rel="stylesheet" href="assets/css/swiper.css">
+
+ <!--======================= CSS ==================-->
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="assets/css/mediaQueries/mediaQ.css">
+ <link rel="stylesheet" href="assets/css/mediaQueries/menumobile.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Grow Search</title>
+</head>
+<body>
+     <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <a  class="logo" href="index.html">
+            <!--<img src="imagens-do-site/logo-escritags.png" alt="GS-png"> -->
+            <h2>GS</h2>
+        </a>
+        
+        <div class="funcionamento" data-semana= "1,2,3,4,5,6" data-horario= "10, 18"> 
+            <h3>Dev On</h3> 
+            <p>Horario para contato direto</p>
+        </div>
+
+        <nav class="nav">
+            <button class="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu">
+                <span class="hamburguer"></span>
+            </button>
+
+            <ul class="menu" role= "menu">
+                <li class="animation pulse"><a href="#boxes">Sobre</a></li>
+                <li class=" animation pulse"><a href="">Produtos</a></li>
+                <li class="animation  pulse " id="bloghead"><a href="" >Blog</a></li>
+                <li>
+                    <div>
+                        <input type="checkbox" class="checkbox" id="darkMode">
+                        <label class="label" for="darkMode">
+                            <i class="fas  fa-moon"></i>
+                            <i class="fas  fa-sun"></i>
+                            <div class="ballChk"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ===================== MAIN ===================== -->
+    <main class="main">
+    <!-- ===================== INICIO ===================== -->
+        <section class="parteInicio section">
+            <span class="spanTitulo"><h1 class="tituloPrincipal">Ajudamos você a posicionar o seu negócio na Internet.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </span>
+
+            <section id="ativarFrase">
+                <button class="ativar" >O que fazemos por aqui</button>
+                <div class="frase">
+                    <p>Você tendo um site bem feito aumenta muito suas chances de conversão para o seu produto ou serviço, é ai que a gente entra em ação.</p>
+                </div>
+            </section>
+        </section>
+
+    <!-- ===================== BOXES ====================== -->
+        <section class="boxes section" id="boxes">
+            <h2 class="section__title">Conheça melhor a GrowSearch</h2>
+            <span class="section__subtitle">Nesta parte você pode conhecer melhor a GS, acompanhar nossos serviços e ainda saber das novidades que estão por vir.</span>
+
+            <div class="services__container container grid">
+                <!-- ======== SERVICES 1 ========== -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid  services__icon"></i>
+                        <h3 class="services__title">Quem <br>Somos</h3>
+                    </div>
+
+                    <span class="button button--small button--link services__button">
+                      View More 
+                      <i class="uil uil-arrow-right  button__icon"></i>  
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-services grid">Ui/Ux <br> Designer </h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Eu desenvolvo a Interface do Usuário.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Desenvolvedor de páginas Web.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Crio interações de elementos UX.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Posiciono a marca de sua empresa.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======== SERVICES 2 ========== -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow  services__icon"></i>
+                        <h3 class="services__title">Serviços<br>Developer</h3>
+                    </div>
+
+                    <span class="button button--small button--link services__button">
+                      View More 
+                      <i class="uil uil-arrow-right  button__icon"></i>  
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-services grid">Frontend <br>Developer</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Eu faço o projeto do designer se tornar real na WEB.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Coloco animações em seus sites.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Te posiciono melhor na Internet atravez do SEO.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Utilizo as melhores tecnologias atuais para desenvolvimento web.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======== SERVICES 3 ========== -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-pen  services__icon"></i>
+                        <h3 class="services__title">Em<br>Breve</h3>
+                    </div>
+
+                    <span class="button button--small button--link services__button">
+                      View More 
+                      <i class="uil uil-arrow-right  button__icon"></i>  
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-services grid">Brading <br> Designer </h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Eu desenvolvo a Interface do Usuário.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Desenvolvedor de páginas Web.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Crio interações de elementos UX.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle service__modal-icon"></i>
+                                    <p>Posiciono a marca de sua empresa.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> 
+    
+    <!-- ===================== PROJETOS ====================== -->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">PROJETOS</h2>
+        <span class="section__subtitle">Mais recentes:</span>
+
+        <div class="portfolio__container container  swiper">
+            <div class="swiper-wrapper">
+                <!--============ PORTFOLIO 1 ============ -->
+                <div class="portfolio__content grid  swiper-slide">
+                    <img src="assets/imagens/sitegsPrint.jpg" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Site Oficial GrowSearch</h3>
+                        <p class="portfolio__description">Trabalhando em toda a parte Front-end do site e mais analise de produtos (ebook's)</p>
+
+                        <a href="https://growsearch.github.io/Site-gs/index.html" class="button button--flex button--small portfolio__button">
+                            View More
+                            <i class="uil uil-arrow-right  button__icon"></i>  
+                        </a>
+                    </div>
+                </div>
+
+                <!--============ PORTFOLIO 2 ============ -->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/imagens/apiviacepPrint.jpg" alt="viacep" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Projeto API Cep/BTC</h3>
+                        <p class="portfolio__description">Usuário consegue digitar o cep e a pagina entrega o endereço. Tudo feito com a API do viacep e do Bitcoin</p>
+
+                        <a href="https://growsearch.github.io/formulario.js/" class="button button--flex button--small portfolio__button">
+                            View More
+                            <i class="uil uil-arrow-right  button__icon"></i>  
+                        </a>
+                    </div>
+                </div>
+
+                <!--============ PORTFOLIO 3 ============ -->
+                <div class="portfolio__content grid  swiper-slide">
+                    <img src="assets/imagens/animaisFantasticosPrint.jpg" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Site Animais Fantásticos</h3>
+                        <p class="portfolio__description">Site todo feito em JS Vanilla ES6+, com funções de animação ao scroll, initTab e varias outras interações maneiras. </p>
+
+                        <a href="https://growsearch.github.io/animais-fantasticos/" class="button button--flex button--small portfolio__button">
+                            View More
+                            <i class="uil uil-arrow-right  button__icon"></i>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== arrow swiper =====-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- ADD Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    </main>
+
+    
+</body>
+
+<script type="module" src="assets/javaScript/main.js"></script>
+<script src="assets/javaScript/swiper-bundle.min.js"></script>
+</html>

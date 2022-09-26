@@ -1,0 +1,105 @@
+@media ( max-width:600px) {
+    /* CONIGURAÇÃO DE HEADER */
+
+    .btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font: bold 1rem sans-serif;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+        gap: 2px;
+    }
+        
+    .hamburguer{
+        display: block;
+        border-top: 2px solid;
+        width: 30px;
+    }
+        
+    .hamburguer::after , .hamburguer::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+        
+    .nav.active .hamburguer{
+        border-top-color: transparent ;
+        color: #e7e7e7;
+    }
+        
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+        
+     }
+            
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+        
+    .menu{
+        display: block;
+        position: absolute;
+        width: 120px;
+        top: 90px;
+        right: -30px;
+        height: 0px;
+        background: #282A2D;
+        transition: 0.3s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+        
+    .nav.active .menu{
+        /*height: calc(100vh - 70px);*/
+        z-index: 1000;
+        visibility: visible;
+        overflow-y: hidden;
+        height: 210px;
+
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.726);
+        border-radius: 0px 0px 5px 5px;
+        border: groove 1px #e7e7e7;
+        border-top: none;
+    }
+        
+    .menu a {
+        padding: 1rem 0px;
+        margin: 0px 0px 0px 10px;
+        border-bottom: 2px solid #02e0bb;
+        text-align: center;
+        border-radius: none;
+    }
+        
+    .menu > li {
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+        width: 100px;
+    }
+        
+    .menu > li > a {
+        border: none;
+        border-bottom: 2px solid rgba(0 , 0 , 0 , 0.5);
+        border-radius: none;
+        background: none;
+        color: #e7e7e7;
+        font-size: 1rem;
+        font-family: monospace;
+        background: #1b2024;
+        margin-top: 20px;
+    }
+        
+    .menu > li > a:hover {
+        color: #02e0bb;
+        background: #1b2024;
+    }
+}
