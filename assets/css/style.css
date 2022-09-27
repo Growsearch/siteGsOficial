@@ -449,12 +449,12 @@ html {
 .portfolio__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
-    color: #e7e7e7;
+    color: #272727;
 }
 
 .portfolio__description {
     margin-bottom: var(--mb-75);
-    color: #e7e7e7;
+    color: #272727;
 }
 
 .portfolio__button:hover .button__icon {
@@ -498,4 +498,34 @@ html {
 .swiper-button-next,
 .swiper-pagination-bullet {
     outline: none;
+}
+
+
+
+/* ========================== PLANOS =================== */
+
+.planos__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    width: 100%;
+}
+
+.planos__content {
+    background: #3f3f3f;
+    padding-top: 20px;
+    color: #fff;
+    border: 2px solid #6E57E0;
+    border-radius: 8px;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #131313;
+}
+
+.preco--plano {
+    background: #6E57E0;
+    border-radius: 20px;
+    width: 120px;
+    margin: 20px 0px 0px 62px;
 }
