@@ -18,7 +18,7 @@ export default function fraseAnima() {
     function clicou(){
         ativar.innerText = 'Clique para sair e voltar o slide!'
         ativar.style.background = 'transparent'
-        ativar.style.color = '#22cd19'
+        ativar.style.color = '#6E57E0'
         ativar.style.fontSize = '12px'
     }
 }
