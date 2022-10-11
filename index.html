@@ -14,13 +14,14 @@
  <!--======================= UNICONS =====================-->
  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
- <!--======================= SWIPER CSS ==================-->
- <link rel="stylesheet" href="assets/css/swiper.css">
+ <!--======================= SWIPER CSS ==================
+ <link rel="stylesheet" href="assets/css/swiper.css">-->
 
  <!--======================= CSS ==================-->
  <link rel="stylesheet" href="assets/css/style.css">
  <link rel="stylesheet" href="assets/css/mediaQueries/mediaQ.css">
  <link rel="stylesheet" href="assets/css/mediaQueries/menumobile.css">
+ <link rel="stylesheet" href="assets/css/slide.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -252,66 +253,52 @@
         <h2 class="section__title">PROJETOS</h2>
         <span class="section__subtitle">Mais recentes:</span>
 
-        <div class="portfolio__container container  swiper">
-            <div class="swiper-wrapper">
-                <!--============ PORTFOLIO 1 ============ -->
-                <div class="portfolio__content grid  swiper-slide">
-                    <img src="assets/imagens/sitegsPrint.jpg" alt="" class="portfolio__img">
+        <ul class="custom-controls">
+            <li><img src="assets/imagens/slide/foto1-thumb.jpg" alt=""></li>
+            <li><img src="assets/imagens/slide/foto2-thumb.jpg" alt=""></li>
+            <li><img src="assets/imagens/slide/foto3-thumb.jpg" alt=""></li>
+            <li><img src="assets/imagens/slide/foto4-thumb.jpg" alt=""></li>
+            <li><img src="assets/imagens/slide/foto5-thumb.jpg" alt=""></li>
+            <li><img src="assets/imagens/slide/foto6-thumb.jpg" alt=""></li>
+            
+        </ul>
+    
+        <div class="wrapper">
+            <ul class="slide">
+                <li>
+                    <div><img src="assets/imagens/slide/foto1.jpg" alt=""></div>
+                    <h2>Animais Fantásticos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing. 
+                        <a href="growsearch.github.io/animais-fantasticos/">animais fantasticos</a></p>
+                </li>
 
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Site Oficial GrowSearch</h3>
-                        <p class="portfolio__description">Trabalhando em toda a parte Front-end do site e mais analise de produtos (ebook's)</p>
+                <li>
+                    <div><img src="assets/imagens/slide/foto2.jpg" alt=""></div>
+                    <h2>Gs Mostruario</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        <a href="">GS Mostruario</a>
+                    </p>
+                </li>
 
-                        <a href="https://growsearch.github.io/Site-gs/index.html" class="button button--flex button--small portfolio__button">
-                            View More
-                            <i class="uil uil-arrow-right  button__icon"></i>  
-                        </a>
-                    </div>
-                </div>
+                <li>
+                    <div><img src="assets/imagens/slide/foto3.jpg" alt=""></div>
+                    <h2>Buscador de CEP</h2>
+                    <p>Desenvolvido utilizando API de cep.
+                        <a href="">Buscador de CEP</a>
+                    </p>
+                </li>
 
-                <!--============ PORTFOLIO 2 ============ -->
-                <div class="portfolio__content grid swiper-slide">
-                    <img src="assets/imagens/apiviacepPrint.jpg" alt="viacep" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Projeto API Cep/BTC</h3>
-                        <p class="portfolio__description">Usuário consegue digitar o cep e a pagina entrega o endereço. Tudo feito com a API do viacep e do Bitcoin</p>
-
-                        <a href="https://growsearch.github.io/formulario.js/" class="button button--flex button--small portfolio__button">
-                            View More
-                            <i class="uil uil-arrow-right  button__icon"></i>  
-                        </a>
-                    </div>
-                </div>
-
-                <!--============ PORTFOLIO 3 ============ -->
-                <div class="portfolio__content grid  swiper-slide">
-                    <img src="assets/imagens/animaisFantasticosPrint.jpg" alt="" class="portfolio__img">
-
-                    <div class="portfolio__data">
-                        <h3 class="portfolio__title">Site Animais Fantásticos</h3>
-                        <p class="portfolio__description">Site todo feito em JS Vanilla ES6+, com funções de animação ao scroll, initTab e varias outras interações maneiras. </p>
-
-                        <a href="https://growsearch.github.io/animais-fantasticos/" class="button button--flex button--small portfolio__button">
-                            View More
-                            <i class="uil uil-arrow-right  button__icon"></i>  
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ====== arrow swiper =====-->
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right swiper-portfolio-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left swiper-portfolio-icon"></i>
-            </div>
-
-            <!-- ADD Pagination -->
-            <div class="swiper-pagination"></div>
-
+                <li><img src="assets/imagens/slide/foto4.jpg" alt=""></li>
+                <li><img src="assets/imagens/slide/foto5.jpg" alt=""></li>
+                <li><img src="assets/imagens/slide/foto6.jpg" alt=""></li>
+            </ul>
         </div>
+
+        <div class="arrow-nav">
+            <button class="prev"></button>
+            <button class="next"></button>
+        </div>
+
     </section>
 
     <!-- ===================== PLANOS ======================= -->
@@ -355,11 +342,14 @@
         </div>
     </section>
 
+    <section class="teste section">
+        <div class="pintando"></div>
+    </section>
+
     </main>
 
     
 </body>
 
 <script type="module" src="assets/javaScript/main.js"></script>
-<script src="assets/javaScript/swiper-bundle.min.js"></script>
 </html>
