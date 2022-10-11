@@ -260,9 +260,8 @@ html {
 /* ========================== INICIO ======================= */
 .parteInicio {
     text-align: center;
-    /*background: linear-gradient(#262F8A , #6E57E0);
-    background: linear-gradient(#272727 , #3f3f3f);*/
-    background: #e7e7e7;
+    /*background: #e7e7e7;*/
+    background: #6b6b6bc0;
 }
 
 .frase {
@@ -271,19 +270,13 @@ html {
 
 .spanTitulo {
     width: 700px;
-    color: #131313;
+    color: #fff;
     align-items: flex-start;
 }
 
 .tituloPrincipal {
     font-size: var(--big-font-size);
     font-weight: var(--font-light);
-}
-
-.tituloPrincipal::before {
-    content: ">";
-    color: #6E57E0;
-    padding: 5px;
 }
 
 .ativar {
@@ -512,7 +505,6 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-    width: 100%;
 }
 
 .planos__content {
@@ -532,11 +524,4 @@ html {
     border-radius: 20px;
     width: 120px;
     margin: 20px 0px 0px 62px;
-}
-
-.pintando {
-    margin: auto;
-    width: 600px;
-    height: 350px;
-    background: #6E57E0;
 }
