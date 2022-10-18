@@ -260,8 +260,12 @@ html {
 /* ========================== INICIO ======================= */
 .parteInicio {
     text-align: center;
+    height: 450px;
     /*background: #e7e7e7;*/
-    background: #6b6b6bc0;
+    /*background: #6b6b6bc0;
+    background: linear-gradient(#6E57E0 , #da1cca);*/
+    background: url(imgCss/fundoInicio.jpg);
+    
 }
 
 .frase {
@@ -281,17 +285,18 @@ html {
 
 .ativar {
     padding: 5px;
-    font-size: var(--h3-font-size);
+    font-size: 13px;
+    text-decoration: underline;
     /*background: linear-gradient(#22CD19 , #15b30c);*/
     background: transparent;
     cursor: pointer;
-    color: #6E57E0;
+    color: #fff;
     border: none;
     border-radius: 8px;
 }
 
 .ativar:hover {
-    color: #5139c7;
+    color: #a393f3;
 }
 
 #ativarFrase {
@@ -319,6 +324,7 @@ html {
         transform: translateX(0);
     }
 }
+
 
 /* ========================== BOXES (services) ========================= */
 
@@ -495,6 +501,64 @@ html {
 .swiper-button-next,
 .swiper-pagination-bullet {
     outline: none;
+}
+
+
+/* =================== PROFISSIONAIS ===================== */
+
+
+.card {
+    display: grid;
+    grid-template-areas: "a b b"
+                         "d d d";
+
+    grid-template-columns: 100px;
+    grid-template-rows: 120px;
+
+    background: rgba(241, 241, 241, 0.918);
+    max-width: 650px;
+    height: 270px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0 2px 2px #6E57E0;
+    border: 1px solid #131313;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+.card > img {
+    width: 100px;
+    height: 120px;
+    background-color: #6E57E0;
+    grid-area: a;
+    border-radius: 50%;
+}
+
+.card > .descricao {
+    background-color: #3f3f3f;
+    grid-area: b;
+    max-width: 500px;
+    height: 110px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    border: 1px groove #6E57E0;
+}
+
+.card > .mensagemDev {
+    grid-area: d;
+    background-color: white;
+    border: 1px groove #6E57E0;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 140px;
+    margin-left: 135px;
+    margin-top: 20px;
+}
+
+.mensagemDev > p {
+    padding: 10px;
 }
 
 
