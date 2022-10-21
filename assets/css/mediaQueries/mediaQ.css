@@ -1,7 +1,8 @@
 
 /* ============== MEDIA QUERIES ======== */
 
-/* para menores tamanhos */
+        /* ============PARA MENORES TANMANHOS ================== */
+
 @media  screen and (max-width: 400px) {
 
     h1 {
@@ -9,24 +10,23 @@
     }
 
     /* header */
-.header {
-    max-width: 400px;
-}
+    .header {
+        max-width: 400px;
+    }
 
-.funcionamento {
-    width: 70px;
-    margin: 0px;
-    font-size: 12px;
-}
-.funcionamento > p {
-    display: none;
-}
+    .funcionamento {
+        width: 70px;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .funcionamento > p {
+        display: none;
+    }
 
  /*============ parte inicial do site ========= */
     .parteInicio {
         text-align: center;
-        height: 380px;
-        
+        height: 380px; 
     }
 
     #ativarFrase > .frase {
@@ -56,11 +56,6 @@
     .spanTitulo > p {
         font-size: .7rem;
     }
-
-/*.container {
-         margin-left: var(--mb-1);
-         margin-right: var(--mb-1);
-    } */
 
     #boxes {
         max-width: 400px;
@@ -95,13 +90,28 @@
         margin-bottom: 15px;
     }
 
+
+    /* ======================= DEPOIMENTOS ================= */
+
+    .listasDeDps {
+        display: flex;
+        justify-items: center;
+    }
+
+    .dpColum1 {
+        width: 300px;
+        text-align: center;
+    }
+
+    .dpColum2 , .dpColum3 {
+        display: none;
+    }
+
 }
 
-/* ------ CARD ------- */
 
-.card > .mensagemDev {
-    margin-left: 0;
-}
+
+
 
 
 
