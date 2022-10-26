@@ -384,14 +384,76 @@ html {
     bottom: 0;
     /*background-color: rgba(0, 0, 0, 0.719);*/
     background: linear-gradient(#f8f8fa , #eeeeee);
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center; deixa o formulario no centro da pagina */
     padding: 0 1rem;
     z-index: var(--z-modal);
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+
+    align-content: center;
+}
+
+.modal__form-close {
+    position: fixed;
+    top: 140px;
+    margin-right: 20px;
+    width: 80px;
+    cursor: pointer;
+    background: linear-gradient(rgb(180, 33, 33) , rgb(163, 27, 27));
+    border-radius: 20px;
+    box-shadow: 0 2px 2px #131313;
+    right: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.text--form {
+    margin: 15px 0px 70px 0px;
+    max-width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.formularioGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    margin-left: 20px;
+}
+
+.areaDados {
+    grid-column: 1;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+}
+
+.mensgemParaEmail {
+    grid-column: 2;
+    display: grid;
+    justify-items: flex-start;
+}
+
+.modal__form > label, input{
+    width: 450px;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #434343;
+}
+
+
+.enviarEmailButton {
+    margin-top: 6px;
+    padding: 5px;
+    width: 250px;
+    background: linear-gradient(greenyellow , green);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 1px #131313;
 }
 
 

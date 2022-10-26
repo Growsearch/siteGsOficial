@@ -78,12 +78,28 @@
 
                 <!-- =========== FORM ============ -->
                 <div class="modal__form">
-                    <h4>Fique por dentro de todas as novidades e entre em contato com a equipe GS</h4>
-                    <i class="uil uil-times modal__form-close"></i>
+                    <h4 class="text--form">Fique por dentro de todas as novidades e entre em contato com a equipe GS</h4>
+                    <i class="uil uil-times modal__form-close"> sair </i>
 
-                    <form action="">
-                        <p>nome: <input type="text" name="" id=""></p>
-                        <p>sobrenome: <input type="text" name="" id=""></p>
+                    <form action="https://formsubmit.co/your@email.com" method="POST" class="formularioGrid">
+                        
+                        <div class="areaDados">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="emailRequired" required>
+                        
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="" required>
+
+                            <label for="name">Sobrenome:</label>
+                            <input type="text" name="sobrenome" id="">
+
+                            <button type="submit" class="enviarEmailButton">Send</button>
+                        </div>
+
+                        <div class="mensgemParaEmail" id="areaMsg">
+                            <label for="texto">Envie seu projeto para nós, explique brevemente o que deseja a seguir:</label>
+                            <textarea name="msgEmail" id="msgEmail" cols="70" rows="10"></textarea>
+                        </div>
                     </form>
 
                 </div>
@@ -473,7 +489,6 @@
     <footer class="footer">
         <p>Growsearch</p>
     </footer>
-
     
 </body>
 
