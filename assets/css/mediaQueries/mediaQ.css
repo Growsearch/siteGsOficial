@@ -11,7 +11,7 @@
 
     /* header */
     .header {
-        max-width: 400px;
+        max-width: 100%;
     }
 
     .funcionamento {
@@ -62,6 +62,24 @@
     }
 
     /* =========== FORMULARIO ========== */
+
+    .modal__form {
+        max-width: 100%;
+    }
+
+    .formularioGrid {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 350px;
+    }
+
+    .modal__form > label, input{
+        max-width: 320px;
+    }
+
+    .mensagemParaEmail > textarea {
+        max-width: 320px;
+    }
 
     .text--form {
         font-size: 16px;
