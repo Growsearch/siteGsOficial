@@ -123,9 +123,12 @@
 
     /* ======================= DEPOIMENTOS ================= */
 
-    .listasDeDps {
-        display: flex;
+    .listaDeDps {
+        /*display: flex;*/
+        grid-template-columns: 1fr;
         justify-items: center;
+        height: 400px;
+        margin: auto;
     }
 
     .dpColum1 {
@@ -137,6 +140,17 @@
         display: none;
     }
 
+    /* =========== MAPA DO SITE ============ */
+
+    .descricaoMapaSite {
+        display: block;
+        height: 600px;
+    }
+
+    .mapa-numeros > ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 

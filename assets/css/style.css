@@ -137,7 +137,7 @@ html {
 ::-webkit-scrollbar-thumb{
     background: #6E57E0;
     width: 3px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 /* ==================== HEADER ================ */
@@ -730,16 +730,29 @@ html {
     color: #c4c4c4;
 }
 
+/* =================== MAPA DO SITE ================ */
 
-/* ================== FOOTER ============= */
-
-.descricaoFooter {
+.descricaoMapaSite {
     background: rgb(5, 3, 8);
     height: 300px;
     color: white;
-    margin-top: 50px;
+    margin: 50px 0px 0px 0px;
     border-top: 1px solid #6E57E0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.mapa-numeros /* ESTA CLASSE SERVE PARA OS NUMEROS E DUVIDAS */ {
+    margin: 10px 0px 0px 25px;
+}
+
+.numeros_hover /* ESTA CLASSE SERVE PARA OS NUMEROS E DUVIDAS */{
+    color: #6E57E0;
+    margin-bottom: 15px; 
+}
+
+/* ================== FOOTER ============= */
 
 .footer {
     background: #6E57E0;
