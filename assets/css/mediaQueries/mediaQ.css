@@ -90,6 +90,7 @@
         right: 2px;
     }
 
+
     /*========= SERVICES ========= */
     .services__container {
         grid-template-columns: repeat(4, 1fr);
@@ -111,9 +112,31 @@
         width: 150px;
     }
 
+    /*======================= SERVICES MODAL ================= */
+
+    .services__modal-content {
+        margin-top: 50px;
+        height: 420px;
+        overflow-y: scroll;
+    }
+
+    .services__modal-content::-webkit-scrollbar {
+        width: 5px;
+        background-color: #6E57E0;
+    }
+
+    .services__modal-content::-webkit-scrollbar-thumb {
+        background-color: #e7e7e7;
+        border-radius: 8px;
+    }
+
+
     /* ========== PLANOS ========== */
     .planos__container {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        justify-items: center
     }
 
     .planos__content {
@@ -129,6 +152,7 @@
         justify-items: center;
         height: 400px;
         margin: auto;
+        background: transparent;
     }
 
     .dpColum1 {
