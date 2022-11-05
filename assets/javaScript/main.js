@@ -4,11 +4,13 @@ import escrevendoTela from "./modules/maqEscrever.js";
 import fraseAnima from "./modules/frase.js";
 import slideNav from "./modules/slide.js";
 import debounce from "./modules/debounce.js"
+import animaCard from "./modules/animaCard.js"
 
 fraseAnima();
 escrevendoTela();
 servicesModal();
 debounce();
+animaCard();
 
 
 const slide = new slideNav('.slide' , '.wrapper');

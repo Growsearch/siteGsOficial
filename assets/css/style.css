@@ -137,13 +137,14 @@ html {
 ::-webkit-scrollbar-thumb{
     background: #6E57E0;
     width: 3px;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 /* ==================== HEADER ================ */
 
 .header {
-    background: linear-gradient(#6E57E0 ,#a393f3);
+    /*background: linear-gradient(#6E57E0 ,#a393f3);*/
+    background: linear-gradient(#302f2fc9 , #0b013bcc);
     border-bottom: 1px solid #a393f3;
     /*background: linear-gradient(#6E57E0 , #dc6ce091);*/
     display: flex;
@@ -151,7 +152,7 @@ html {
     padding: 10px;
     align-items: center;
     flex-wrap: wrap;
-    height: 73px;
+    height: 63px;
     position: fixed;
     width: 1366px;
     z-index: 2000;
@@ -164,39 +165,17 @@ html {
     text-decoration: none;
 }
 
-.funcionamento {
+.barraPesquisa {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 600px;
-    width: 235px;
-    border: 1px solid black;
-    padding: 6px;
-    background: #0c0c0fa4;
-    border-radius: 10px;
-}
-.funcionamento > h3 {
-    color: #e7e7e7;
-    font-weight: 400;
-    font-size: 12px;
-}
-.funcionamento > p {
-    color: #e7e7e7;
-    font-size: 12px;
 }
 
-[data-semana]::after {
-    display: inline-block;
-    content: "";
-    width: 10px;
-    height: 12px;
-    background: red;
-    border-radius: 50%;
-    margin-left: 8px;
-    border: 1px solid black;
+.lupaPesquisa {
+    color: white;
 }
 
-[data-semana].aberto::after {
-    background: greenyellow;
+.barraPesquisa > input {
+    background-color: #434343;
+    border: 1px solid #6E57E0;
 }
 
 .menu {
@@ -222,20 +201,20 @@ html {
 }
 
 .logo > h2 {
-    background: linear-gradient(#131313, #302f2f);
-    border-radius: 50%;
+    /*background: linear-gradient(#131313, #302f2f);*/
+    border-radius: 20px;
     color: #e7e7e7;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 32px;
-    padding: 10px;
+    font-size: 28px;
+    /*padding: 10px;
     border: 1px groove #131313;
-    box-shadow: 0 2px 2px #131313;
+    box-shadow: 0 2px 2px #131313;*/
 }
 
 .logo > h2:hover {
     transition: .5s linear;
-    background: linear-gradient(#6E57E0, #806ce0);
-    color: #131313;
+    /*background: linear-gradient(#6E57E0, #806ce0);*/
+    color: #6E57E0;
     box-shadow: 0px 0px 0px;
 }
 
@@ -332,11 +311,11 @@ html {
 }
 
 #ativarFrase> .frase {
-    max-width: 500px;
-    font-size: 22px;
+    max-width: 700px;
+    font-size: 18px;
     /*background: #272727;*/
-    /*background: linear-gradient(#6E57E0, #dc6ce091);*/
-    background: linear-gradient(#6E57E0, #a393f3);
+    /*background: linear-gradient(#6E57E0, #a393f3);*/
+    background: linear-gradient(#131313 , #272727);
     border-radius: 8px;
     border: 1px solid #6E57E0;
     padding: 5px;
@@ -635,7 +614,8 @@ html {
     grid-template-rows: 120px;
 
     /*background: rgba(241, 241, 241, 0.918);*/
-    background: linear-gradient(#555555 , #3f3f3f);
+    /*background: linear-gradient(#555555 , #3f3f3f);*/
+    background: linear-gradient(#131313 , #272727);
     max-width: 650px;
     height: 270px;
     margin: auto;
@@ -644,6 +624,9 @@ html {
     border: 1px groove #6E57E0;
     border-radius: 15px;
     justify-content: space-around;
+
+    opacity: 0;
+    transform: translateY(15px);
 }
 
 .card > img {
@@ -684,6 +667,20 @@ html {
     padding: 10px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* animando card com js */
+
+.cardAtivo {
+    animation: slideCard 1s forwards;
+}
+
+@keyframes slideCard {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 
 /* ======================= DEPOIMENTOS ================= */
 
@@ -752,6 +749,19 @@ html {
     color: #c4c4c4;
 }
 
+/*=== recomendado PLANOS === */
+.recomendadoPlano {
+    position: absolute;
+    padding: 8px;
+    background: rgb(82, 255, 47);
+    color: #131313;
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 400;
+    bottom: -154rem;
+}
+
 /* =================== MAPA DO SITE ================ */
 
 .descricaoMapaSite {
@@ -763,6 +773,40 @@ html {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.funcionamento {
+    display: flex;
+    flex-wrap: wrap;
+    width: 235px;
+    border: 1px solid black;
+    padding: 6px;
+    background: #0c0c0fa4;
+    border-radius: 10px;
+}
+.funcionamento > h3 {
+    color: #e7e7e7;
+    font-weight: 400;
+    font-size: 12px;
+}
+.funcionamento > p {
+    color: #e7e7e7;
+    font-size: 12px;
+}
+
+[data-semana]::after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 12px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 8px;
+    border: 1px solid black;
+}
+
+[data-semana].aberto::after {
+    background: greenyellow;
 }
 
 .mapa-numeros /* ESTA CLASSE SERVE PARA OS NUMEROS E DUVIDAS */ {
