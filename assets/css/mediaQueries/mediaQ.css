@@ -25,6 +25,7 @@
 
  /*============ parte inicial do site ========= */
     .parteInicio {
+        grid-template-columns: 1fr;
         text-align: center;
         height: 380px; 
     }
