@@ -36,11 +36,6 @@
             <!--<img src="imagens-do-site/logo-escritags.png" alt="GS-png"> -->
             <h2>GrowSearch</h2>
         </a>
-
-        <div class="barraPesquisa">
-            <i class="uil uil-search-alt  lupaPesquisa"></i>
-            <input type="search" name="" id="">
-        </div>
         
         <nav class="nav">
             <button class="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu" aria-label="Abrir Menu">
@@ -48,6 +43,7 @@
             </button>
 
             <ul class="menu" role= "menu">
+                <li><a href="#home">Home</a></li>
                 <li ><a href="#boxes">Sobre</a></li>
                 <li ><a href="#projetos">Projetos</a></li>
                 <li ><a href="#planos" >Planos</a></li>
@@ -57,9 +53,9 @@
     <!-- ===================== MAIN ===================== -->
     <main class="main">
     <!-- ===================== INICIO ===================== -->
-        <section class="parteInicio section">
+        <section class="parteInicio" id="#home">
             <span class="spanTitulo"><h1 class="tituloPrincipal">Ajudamos você a posicionar o seu negócio na Internet.</h1>
-            <p>Construimos o melhor site para o seu negócio.</p>
+            <p>Sites com Html5, CSS3 e JavaScript ES6+ <br> a partir de 350,00 R$. E você só paga UMA vez.</p>
             </span>
 
             <section id="ativarFrase">
@@ -67,17 +63,62 @@
                 <div class="frase">
                     <p>Você tendo um site bem feito aumenta muito suas chances de conversão para o seu produto ou serviço, é ai que a gente entra em ação.</p>
                 </div>
+
+                <div class="projetosPagInicio">
+                    <h3>Total de Projetos Realizados</h3>
+                    <div class="projetosIniciaisContainer">
+                        <div class="projContent">
+                            <h3>Designer</h3>
+                            <h2>5</h2><p>Projetos Concluidos</p>
+                        </div>
+
+                        <div class="projContent">
+                            <h3>Front-end</h3>
+                            <h2>+6</h2><p>Projetos Concluidos</p>
+                        </div>
+
+                        <div class="projContent">
+                            <h3>Back-end</h3>
+                            <h2>0</h2><p>Em breve com o Projeto: Mercado Frutas e Verduras.</p>
+                        </div>
+
+                        <div class="projContent">
+                            <h3>Monitoramento</h3>
+                            <h2>+1</h2><p>Online</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <!-- ====================== MODAL TOTAL =============== -->
-            <div class="estruturaForm">
-                <!-- =========== BOTAO ==========-->
-                <div class="buttonContact">
-                    <h3>Contate-nos</h3>
+            <div class="parteBInicio">
+                <div class="estamosProd"> 
+                    <h3>Mais sites mostruarios saindo para exposição!</h3>
+                    <p>Em Breve teremos... Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, cumque?</p>
+                </div>
+                <div class="imagensProjFuturo">
+                    <img class="imgInicioProj" src="" alt="">
+                    <img class="imgInicioProj" src="" alt="">
                 </div>
 
+                <!-- ====================== MODAL TOTAL =============== -->
+                <div class="estruturaForm">
+                <!-- =========== BOTAO ==========-->
+                    <div class="buttonContact">
+                        <h3>Contate-nos</h3>
+                    </div>
+
+                    <form class="formContato" action="">
+                        <label for="email">Email:</label>
+                        <input type="email" name="" id="">
+                        <br>
+                        <label for="name">Name:</label>
+                        <input type="text" name="" id="">
+                        <label for="texto">Envie seu projeto para nós, explique brevemente o que deseja:</label>
+                        <textarea name="msgEmail" id="msgEmail" cols="70" rows="10"></textarea>
+                    </form>
+
                 <!-- =========== FORM ============ -->
-                <div class="modal__form">
+                    <div class="modal__form">
                     <h4 class="text--form">Fique por dentro de todas as novidades e entre em contato com a equipe GS</h4>
                     <i class="uil uil-times modal__form-close"> sair </i>
 
@@ -92,8 +133,6 @@
 
                             <label for="name">Sobrenome:</label>
                             <input type="text" name="sobrenome" id="">
-
-                            
                         </div>
 
                         <div class="mensagemParaEmail" id="areaMsg">
@@ -104,14 +143,17 @@
                         <button type="submit" class="enviarEmailButton">Enviar</button>
                     </form>
 
+                    </div>
                 </div>
+
+                
             </div>
-            
+
         </section>
 
     <!-- ===================== BOXES ====================== -->
-        <section class="boxes section" id="boxes">
-            <h2 class="section__title">Conheça melhor a GrowSearch</h2>
+        <section class="boxes" id="boxes">
+            <h2 class="section__title h2Apresentacao">Conheça melhor a GrowSearch</h2>
             <span class="section__subtitle">Nesta parte você pode conhecer melhor a GS, acompanhar nossos serviços e ainda saber das novidades que estão por vir.</span>
 
             <div class="services__container container grid scroll-mobile">
@@ -295,7 +337,7 @@
     <!-- ===================== PROJETOS ====================== -->
     <section class="portfolio section" id="projetos">
         <h2 class="section__title">PROJETOS</h2>
-        <span class="section__subtitle">Mais recentes:</span>
+        <span class="section__subtitle">Acesse os projetos mais recentes:</span>
 
         <ul class="custom-controls">
             <li></li>
