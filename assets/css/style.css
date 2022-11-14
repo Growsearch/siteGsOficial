@@ -450,25 +450,8 @@ html {
     width: 270px;
     height: 170px;
     box-shadow: 0 2px 2px grey;
-    border-radius: 10px;
-}
-
-.parteBInicio > img {
-    margin: auto;
-    margin-top: 20px;
-    /*height: 170px;
-    width: 530px;*/
-    height: 140px;
-    width: 240px;
     border-radius: 5px;
-    box-shadow: 0 2px 2px #313131;
 }
-
-.parteBInicio > img:hover {
-    background-color: blue;
-    image-rendering: optimizeSpeed;
-}
-
 
 
 /* =======  button MODAL ===== */
@@ -499,8 +482,10 @@ html {
     width: 570px;
     box-shadow: 0 2px 2px grey;
     border-radius: 10px;
-    background: #1D1D1F;
-    color: white;
+    /*background: #1D1D1F;*/
+    background: #f3f3f3;
+    color: #1D1D1F;
+    opacity: 0;
 }
 
 /* === MODAL FORM === */
