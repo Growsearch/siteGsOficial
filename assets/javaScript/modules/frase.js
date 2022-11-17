@@ -2,8 +2,8 @@
 // Adicionando interatividade na class="frase";
 export default function fraseAnima() {
 
-    let frase = document.querySelector('div.frase')
-    let ativar = document.querySelector('button.ativar')
+    let frase = document.querySelector('.frase');
+    let ativar = document.querySelector('button.ativar');
     
     ativar.addEventListener('click' , () => {
         frase.classList.toggle('animar');
