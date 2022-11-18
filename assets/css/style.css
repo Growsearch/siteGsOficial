@@ -480,10 +480,12 @@ html {
     padding: 15px;
     margin-top: 20px;
     width: 570px;
+    height: 300px;
     box-shadow: 0 2px 2px grey;
     border-radius: 10px;
-    /*background: #1D1D1F;*/
-    background: #f3f3f3;
+    /*background: #1D1D1F;
+    background: #f3f3f3;*/
+    background: linear-gradient(#f8f8f8, #e7e7e7);
     align-items: flex-start;
     color: #1D1D1F;
     opacity: 0;
@@ -492,6 +494,38 @@ html {
     row-gap: 20px;
 }
 
+.formContato > div > label {
+    color: #202020;
+    font-weight: 600;
+}
+
+.formContato > div > input {
+    width: 400px;
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #2020209c;
+}
+
+.formContato > div > textarea {
+    background: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #202020;
+    border: none;
+}
+
+.buttonForm {
+    width: 180px;
+    padding: 6px;
+    background: linear-gradient(green, greenyellow);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px grey;
+}
 /* ======= ENTRADA DE FORMULARIO ====== */
 
 .formContato.animate {
