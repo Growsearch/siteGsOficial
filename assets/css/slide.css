@@ -34,19 +34,32 @@ img {
     border-radius: 10px;
     overflow: hidden;
     /*box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5) ;*/
-    box-shadow: 0 3px 4px #927c00;
+    box-shadow: 0 3px 4px #272727;
     opacity: .8;
     transform: scale(.7);
     transition: .4s;
-    color: #f8f8f8;
+    color: #272727;
     text-align: center;
 
     background: #f8f8f8;
 }
 
 .slide li > h2 {
-    font-weight: 300;
+    background-color: #6E57E0;
+    color: #f8f8f8;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    margin: auto;
     margin-top: 20px;
+}
+
+.slide li > p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .slide li.active {

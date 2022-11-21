@@ -299,7 +299,7 @@ html {
 }
 .spanTitulo > p {
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 180px;
     font-size: 20px;
     font-weight: 600;
     color: #6E57E0;
@@ -311,6 +311,8 @@ html {
 }
 
 .tituloPrincipal {
+    position: absolute;
+
     width: 610px;
     font-size: 42px;
     font-weight: 600;
@@ -362,12 +364,13 @@ html {
     max-width: 590px;
     font-size: 16px;
     /*background: linear-gradient(#131313 , #272727);*/
-    background: #f8f8f8;
+    background: #6E57E0;
     border-radius: 8px;
     /*border: 1px solid #6E57E0;*/
     /*border: 1px solid grey;*/
     padding: 10px;
-    color: #202020;
+    color: white;
+    text-shadow: 0 1px 1px grey;
     opacity: 0;
     transform: translateX(10px);
     margin: 20px 0px 20px 20px;
@@ -387,6 +390,14 @@ html {
 }
 
 /*========== PARTE DAS REDES SOCIAIS INICIO ======== */
+
+.projetosPagInicio > h3 {
+    text-align: center;
+    margin: auto;
+    background: #1D1D1F;
+    color: #f8f8f8;
+}
+
  .projetosIniciaisContainer {
     margin: 8px;
     display: flex;
@@ -405,13 +416,19 @@ html {
  }
 
  .projContent > h3 {
-    color: #6E57E0;
+    color: #806af0;
+    padding-top: 20px;
  }
 
  .projContent > h2 {
     color: #f8f8f8;
     text-shadow: 0 1px 1px #131313;
  } 
+
+ .projContent > p {
+    color: #e7e7e7;
+    font-size: 13px;
+ }
 
 
 /* ============== Parte B inicio (PARTE DA DIREITA) =========== */
@@ -446,15 +463,65 @@ html {
     gap: 15px;
 }
 
+/* ====== efeito de imagens ======== */
+
 .imgInicioProj {
     width: 270px;
     height: 170px;
     box-shadow: 0 2px 2px grey;
     border-radius: 5px;
+    background: url(imgCss/1.png);
+}
+
+.imgInicioProj > p {
+    opacity: 0;
+}
+
+.imgInicioProj:hover > p {
+    transition: .6s;
+    width: 270px;
+    height: 170px;
+    padding: 30px 10px 10px 10px;
+    opacity: 0.9;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.imgInicioProjSeg {
+    width: 270px;
+    height: 170px;
+    box-shadow: 0 2px 2px grey;
+    border-radius: 5px;
+    background: url(imgCss/2.png)
+}
+
+.imgInicioProjSeg > p {
+    opacity: 0;
+}
+
+.imgInicioProjSeg:hover > p {
+    transition: .6s;
+    width: 270px;
+    height: 170px;
+    padding: 30px 10px 10px 10px;
+    opacity: 0.9;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 
 /* =======  button MODAL ===== */
+
+.estruturaForm {
+    height: 280px;
+}
+
 .buttonContact {
     padding: 15px;
     /*background: linear-gradient(#907fe4, #5b45ca);*/
@@ -482,10 +549,9 @@ html {
     width: 570px;
     height: 300px;
     box-shadow: 0 2px 2px grey;
-    border-radius: 10px;
-    /*background: #1D1D1F;
-    background: #f3f3f3;*/
-    background: linear-gradient(#f8f8f8, #e7e7e7);
+    border-radius: 5px;
+    border: 1px solid #6E57E0;
+    background: linear-gradient(#f8f8f8, #f0f0f0);
     align-items: flex-start;
     color: #1D1D1F;
     opacity: 0;
@@ -501,30 +567,33 @@ html {
 
 .formContato > div > input {
     width: 400px;
-    background-color: #fff;
-    padding: 10px;
+    background-color: #bed1e78a;
+    padding: 5px;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px #2020209c;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #2020209c;
 }
 
 .formContato > div > textarea {
     background: #fff;
     padding: 6px;
-    border-radius: 6px;
+    border-radius: 2px;
     box-shadow: 0 1px 1px #202020;
     border: none;
 }
 
 .buttonForm {
-    width: 180px;
-    padding: 6px;
-    background: linear-gradient(green, greenyellow);
+    width: 150px;
+    padding: 12px;
+    /*background: linear-gradient(green, greenyellow);*/
+    background: #6E57E0;
     color: white;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     box-shadow: 0 2px 2px grey;
+    cursor: pointer;
+    margin-left: 200px;
 }
 /* ======= ENTRADA DE FORMULARIO ====== */
 
@@ -550,8 +619,9 @@ html {
 }
 
 .h2Apresentacao {
-    color: white;
+    color: #202020;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 .services__container {
@@ -693,8 +763,7 @@ html {
 /*============================ PROJETOS ====================== */
 .portfolio {
     background-color: #e7e7e7;
-    background: linear-gradient(/*#eee454*/ #7666ca ,#fefefe);
-    margin: auto;
+    background: linear-gradient(#1D1D1F , #202020);
 }
 
 
