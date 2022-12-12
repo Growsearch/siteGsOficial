@@ -105,7 +105,8 @@ html {
 
 .section__subtitle {
     display: block;
-    font-size: var(--small-font-size);
+    /*font-size: var(--small-font-size);*/
+    font-size: 18px;
     margin-bottom: var(--mb-3);
     /*color: #e7e7e7e1;*/
     color: #353535;
@@ -452,9 +453,19 @@ html {
 
 .estamosProd {
     padding: 10px;
-    color: #1D1D1F;
+    color: #c4c4c4;
     margin-bottom: 15px;
     text-align: left;
+    background: #202020;
+    border-radius: 8px;
+}
+
+.estamosProd > h3 {
+    color: #5a45c4;
+}
+
+.parteBInicio > .estamosProd > p {
+    font-weight: bold;
 }
 
 .imagensProjFuturo {
@@ -484,6 +495,7 @@ html {
     padding: 30px 10px 10px 10px;
     opacity: 0.9;
     background-color: orangered;
+    background: #6E57E0;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -509,6 +521,7 @@ html {
     padding: 30px 10px 10px 10px;
     opacity: 0.9;
     background-color: green;
+    background-color: #6E57E0;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -551,9 +564,9 @@ html {
     box-shadow: 0 2px 2px grey;
     border-radius: 5px;
     border: 1px solid #6E57E0;
-    background: linear-gradient(#f8f8f8, #f0f0f0);
+    /*background: linear-gradient(#f8f8f8, #f0f0f0);*/
+    background: #202020;
     align-items: flex-start;
-    color: #1D1D1F;
     opacity: 0;
     justify-items: flex-start;
     text-align: left;
@@ -561,13 +574,13 @@ html {
 }
 
 .formContato > div > label {
-    color: #202020;
+    color: #e7e7e7;
     font-weight: 600;
 }
 
 .formContato > div > input {
     width: 400px;
-    background-color: #bed1e78a;
+    background-color: #e2e2e2;
     padding: 5px;
     border: none;
     border-radius: 2px;
@@ -575,7 +588,7 @@ html {
 }
 
 .formContato > div > textarea {
-    background: #fff;
+    background: #e2e2e2;
     padding: 6px;
     border-radius: 2px;
     box-shadow: 0 1px 1px #202020;
@@ -590,10 +603,10 @@ html {
     color: white;
     font-weight: 600;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0 2px 2px grey;
     cursor: pointer;
-    margin-left: 200px;
+    margin-left: 400px;
 }
 /* ======= ENTRADA DE FORMULARIO ====== */
 
@@ -613,9 +626,20 @@ html {
 .boxes {
     margin: 30px;
     height: 400px;
-    background: #f8f8f8;
+    background: #7d6ecc;
     border-radius: 10px;
+    border: groove 1px #202020;
     box-shadow: 0px 2px 2px rgb(177, 177, 177);
+    padding: 20px 0px 10px 0px;
+}
+
+.boxes > .section__title {
+    color: #f7f7f7;
+}
+
+.boxes > .section__subtitle {
+    color: #f7f7f7;
+    margin-bottom: 0px;
 }
 
 .h2Apresentacao {
@@ -633,11 +657,11 @@ html {
     position: relative;
     /*background: linear-gradient(#202020 , #313131);*/
     background: #1D1D1F;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 4rem .8rem 1.70rem 1.8rem;
     border-radius: .25rem;
     /*border: 1px groove #6E57E0;*/
-    border: 1px groove #131313;
+    border: 1px groove #7666ca;
     /*box-shadow: 0 2px 2px #a393f3;*/
     box-shadow: 0 2px 3px #131313;
     transition: .3s;
@@ -762,8 +786,15 @@ html {
 
 /*============================ PROJETOS ====================== */
 .portfolio {
-    background-color: #e7e7e7;
     background: linear-gradient(#1D1D1F , #202020);
+}
+
+.titleProjeto {
+    color: #e7e7e7;
+}
+
+.textProjeto {
+    color: #e7e7e7;
 }
 
 
@@ -771,9 +802,8 @@ html {
 /* =================== PROFISSIONAIS ===================== */
 
 .profissionais {
-    height: 450px;
-    margin-bottom: 40px;
-    background: #fefefe;
+    height: 600px;
+    margin-bottom: 35px;
 }
 
 .card {
@@ -787,7 +817,7 @@ html {
     /*background: rgba(241, 241, 241, 0.918);*/
     /*background: linear-gradient(#555555 , #3f3f3f);*/
     background: linear-gradient(#131313 , #272727);
-    max-width: 650px;
+    max-width: 750px;
     height: 270px;
     margin: auto;
     padding: 15px;
@@ -855,8 +885,21 @@ html {
 
 /* ======================= DEPOIMENTOS ================= */
 
+.depoimentos {
+    margin-bottom: 0px;
+    background: #202020;
+    padding-top: 20px;
+}
+
+.depoimentos > .section__title {
+    color: #f7f7f7;
+}
+
+.depoimentos > .section__subtitle {
+    color: #f7f7f7;
+}
+
 .listaDeDps {
-    background: #000;
     max-width: 100%;
     height: 350px;
     display: grid;
@@ -889,7 +932,8 @@ html {
 /* ========================== PLANOS =================== */
 
 .planos {
-    background: #000;
+    margin-top: 0px;
+    background: #202020;
 }
 
 .planos__container {
