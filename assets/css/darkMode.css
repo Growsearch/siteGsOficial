@@ -1,6 +1,6 @@
 
 body.dark {
-    background: #202020;
+    background: #0f0f0f;
     transition: .6s;
 }
 
@@ -63,7 +63,7 @@ body.dark .profissionais {
 
 
 body.dark .parteBInicio {
-    background: #000;
+    background: #202020;
     transition: .4s;
 }
 
@@ -71,8 +71,8 @@ body.dark .estamosProd {
     color: white;
 }
 
-body.dark #ativarFrase {
-    background: #000;
+body.dark #projetosRealizados {
+    background: #202020;
     transition: .4s;
 }
 

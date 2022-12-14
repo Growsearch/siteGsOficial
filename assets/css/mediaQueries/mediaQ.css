@@ -28,7 +28,7 @@
         grid-template-columns: 400px;
         grid-template-rows: 100px 200px 150px;
         text-align: center;
-        height: 580px; 
+        height: 1100px; 
         max-width: 400px;
     }
 
@@ -46,6 +46,8 @@
     .spanTitulo {
         width: 300px;
         margin: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     
     .tituloPrincipal {
@@ -78,8 +80,9 @@
         margin: 0;
         grid-row: 2;
         grid-column: 1;
-        height: 150px;
+        height: 420px;
         max-width: 390px;
+        margin-top: 30px;
     }
 
     .estamosProd {
@@ -89,10 +92,27 @@
 
     .imagensProjFuturo {
         margin: 0;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 400px;
-        overflow-x: scroll;
+        height: 300px;
     }
+
+    /* =================== PROJETOS REALIZADOS ============= */
+
+    #projetosRealizados {
+        margin-top: 320px;
+    }
+
+    .projetosIniciaisContainer {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 360px;
+    }
+
+    .projContent {
+        width: 150px;
+        height: 160px;
+    }
+
+
 
        /* =========== FORMULARIO MODAL ========== */
     .formContato {
@@ -120,6 +140,10 @@
         box-shadow: 0 1px 1px #202020;
         border: none;
         width: 280px;
+    }
+
+    .buttonForm {
+        margin-left: 100px;
     }
 
 /*.modal__form {
