@@ -337,11 +337,6 @@
      .header, .main , .footer__container {
          padding: 0;
      }
-
-     .services__container {
-         grid-template-columns: repeat(4, 238px);
-         margin: 0px 0px 0px 150px;
-     }
  
      .portfolio__content {
          column-gap: 5rem;
