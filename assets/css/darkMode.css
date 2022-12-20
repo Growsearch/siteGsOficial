@@ -58,7 +58,7 @@ body.dark .tituloPrincipal {
 }
 
 body.dark .profissionais {
-    background: #6E57E0;
+    background: #4b4b4b;
 }
 
 
@@ -75,4 +75,17 @@ body.dark #projetosRealizados {
     background: #202020;
     transition: .4s;
 }
+
+body.dark #projetosRealizados > .projetosPagInicio > .projetosIniciaisContainer > .projContent {
+    background: #4b4b4b;
+}
+
+body.dark .boxes {
+    background: #202020;
+}
+
+body.dark .propaganda {
+    background: #202020;
+}
+
 

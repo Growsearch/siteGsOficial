@@ -145,6 +145,7 @@ html {
 /* ==================== HEADER ================ */
 
 .header {
+    position: fixed;
     background: #1D1D1F;
     background: #806af0;
     border-bottom: 1px solid #1D1D1F;
@@ -177,6 +178,8 @@ html {
     display: flex;
     margin-right: 50px;
     align-content: center;
+    background-color: #C6F05D;
+    border-radius: 40px;
 }
 
 .menu > li {
@@ -191,7 +194,7 @@ html {
     background: transparent;
     border-radius: 8px;
     margin-left: 10px;
-    color: #e7e7e7;
+    color: #202020;
     text-decoration: none;
 }
 
@@ -534,19 +537,18 @@ html {
     padding: 15px;
     /*background: linear-gradient(#907fe4, #5b45ca);*/
     background: linear-gradient(#6E57E0 , #5a45c4);
+    background: #C6F05D;
     width: 200px;
     border-radius: 5px;
     cursor: pointer;
     margin: auto;
     margin-top: 20px;
-    box-shadow: 0 3px 3px #202020;
-    color: #e7e7e7;
+    color: #272727;
     /*grid-column: 2;*/
 }
 
 .buttonContact:hover {
-    background: linear-gradient(#7666ca , #4934b4);
-    box-shadow: none;
+    background-color: #d2f37e;
     transition: .7s;
 }
 
@@ -647,6 +649,12 @@ html {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.spanApresentacao {
+    width: 420px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .services__container {
@@ -799,12 +807,14 @@ html {
     height: 400px;
     width: 650px;
     background: url(imgCss/3.png);
+    background: #f8f8f8;
     box-shadow: 0px 2px 2px rgb(199, 199, 199);
     padding: 20px 0px 10px 0px;
 }
 
 .fraseMotivacao{
-    width: 300px;
+    width: 450px;
+    padding: 20px;
     margin: auto;
     text-align: center;
     background: #806ce0;
@@ -813,7 +823,13 @@ html {
 }
 
 .fraseMotivacao h2 {
-    color: white;
+    color: white; 
+    font-weight: 600;
+}
+
+.fraseMotivacao > p {
+    color: #cccccc;
+    font-weight: 400;
 }
 
 /*============================ PROJETOS ====================== */
@@ -921,16 +937,15 @@ html {
 
 .depoimentos {
     margin-bottom: 0px;
-    background: #202020;
     padding-top: 20px;
 }
 
 .depoimentos > .section__title {
-    color: #f7f7f7;
+    color: #272727;
 }
 
 .depoimentos > .section__subtitle {
-    color: #f7f7f7;
+    color: #353535;
 }
 
 .listaDeDps {
@@ -955,11 +970,21 @@ html {
 
 .depoimentoCard {
     color: #e7e7e7;
+    color: #272727;
     /*background: linear-gradient(#6E57E0, #dc6ce091);*/
     background: linear-gradient(#6E57E0, #7d6ecc);
+    background: #e7e7e7;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
+}
+
+.depoimentoCard > h2 {
+    font-size: 16px;
+}
+
+.depoimentoCard > p {
+    font-size: 13px;
 }
 
 
@@ -967,7 +992,7 @@ html {
 
 .planos {
     margin-top: 0px;
-    background: #202020;
+    height: 700px;
 }
 
 .planos__container {
@@ -979,17 +1004,17 @@ html {
 }
 
 .planos__content {
-    background: linear-gradient(#3f3f3f, #272727);
+    background: #4b4b4b;
     padding: 20px;
-    color: #fff;
     border-radius: 8px;
+    border: 1px solid #C6F05D;
     width: 230px;
     text-align: center;
-    box-shadow: 0px 2px 3px #806ce0;
+    box-shadow: 0px 2px 2px #202020;
 }
 
 .preco--plano {
-    background: #6E57E0;
+    background: #C6F05D;
     border-radius: 15px;
     width: 120px;
     margin: 5px 0px 0px 35px;
@@ -998,32 +1023,51 @@ html {
     padding: 10px;
 }
 
+.descricao--plano {
+    color: white;
+}
+
+.descricao--plano > h2 {
+    color: #6E57E0;
+    font-size: 26px;
+    margin-bottom: 10px;
+    padding: 12px;
+    background: #6e6e6e;
+    border-radius: 20px;
+}
+
 .descricao--plano > p {
-    color: #c4c4c4;
+    color: #e7e7e7;
+    padding: 15px;
+}
+
+.descricao--plano > p > span {
+    color: rgb(255, 238, 0);
+}
+
+.descricao--plano > p > .javaSpan {
+    color: red;
 }
 
 /*=== recomendado PLANOS === */
 .recomendadoPlano {
     position: absolute;
+    height: 32px;
     padding: 8px;
-    background: rgb(82, 255, 47);
+    background: #C6F05D;
     color: #131313;
     border-radius: 20px;
-
     font-size: 11px;
     font-weight: 400;
-    bottom: -154rem;
+    bottom: -172rem;
 }
 
 /* =================== MAPA DO SITE ================ */
 
 .descricaoMapaSite {
-    background: rgb(5, 3, 8);
-    height: 300px;
-    color: white;
-    margin: 50px 0px 0px 0px;
-    border-top: 1px solid #6E57E0;
-
+    height: 310px;
+    background: #e7e7e7;
+    /*margin: 50px 0px 0px 0px;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }

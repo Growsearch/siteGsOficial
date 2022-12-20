@@ -26,8 +26,9 @@
  /*============ parte inicial do site ========= */
     .parteInicio {
         grid-template-columns: 400px;
-        grid-template-rows: 100px 200px 150px;
+        grid-template-rows: 300px 300px 350px;
         text-align: center;
+        align-items: flex-start;
         height: 1100px; 
         max-width: 400px;
     }
@@ -45,9 +46,10 @@
     
     .spanTitulo {
         width: 300px;
+        background: #6E57E0;
         margin: auto;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        margin-top: 200px;
+        margin-bottom: 200px;
     }
     
     .tituloPrincipal {
