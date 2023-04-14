@@ -8,6 +8,7 @@ import animaCard from "./modules/animaCard.js"
 import contatenos from"./modules/contateModal.js";
 import darkMode from"./modules/darkMode.js";
 import menuMobile from"./modules/menuMobile.js";
+import initTooltip from "./modules/tooltip.js";
 
 //fraseAnima();
 escrevendoTela();
@@ -17,6 +18,8 @@ animaCard();
 contatenos();
 darkMode();
 menuMobile();
+initTooltip();
+
 
 const slide = new slideNav('.slide' , '.wrapper');
 slide.init();

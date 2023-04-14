@@ -147,7 +147,7 @@ html {
 .header {
     position: fixed;
     background: #1D1D1F;
-    background: #806af0;
+    /*background: #806af0;*/
     border-bottom: 1px solid #1D1D1F;
     box-shadow: 0 2px 2px grey;
     display: flex;
@@ -201,7 +201,7 @@ html {
 .menu > li > a:hover {
     color: #6E57E0;
     font-size: 18px;
-    transition: 1s;
+    font-weight: 800;
 }
 
 .logo > h2 {
@@ -303,6 +303,7 @@ html {
     color: #fff;
     line-height: 26px;
     background-color: #6E57E0;
+    background-color: #1D1D1F;
     padding: 8px;
     width: 550px;
     border-radius: 10px;
@@ -433,7 +434,7 @@ html {
 
 
 .parteBInicio {
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 20px;
     /*background: rgb(235, 235, 235);*/
     background: #f8f8f8;
@@ -450,15 +451,18 @@ html {
 .estamosProd {
     padding: 10px;
     color: #8b8b8b;
+    color: white;
     margin-bottom: 15px;
     text-align: left;
     background: #202020;
-    background: #e7e7e7;
+    /*background: #e7e7e7;*/
     border-radius: 8px;
 }
 
 .estamosProd > h3 {
     color: #7d6ecc;
+    color: #C6F05D;
+    margin-bottom: 15px;
     font-size: 20px;
 }
 
@@ -492,7 +496,6 @@ html {
     height: 170px;
     padding: 30px 10px 10px 10px;
     opacity: 0.9;
-    background-color: orangered;
     background: #6E57E0;
     color: white;
     font-size: 16px;
@@ -518,7 +521,6 @@ html {
     height: 170px;
     padding: 30px 10px 10px 10px;
     opacity: 0.9;
-    background-color: green;
     background-color: #6E57E0;
     color: white;
     font-size: 16px;
@@ -577,7 +579,7 @@ html {
 
 .formContato > div > input {
     width: 400px;
-    background-color: #806af0;
+    background-color: #fff;
     color: white;
     padding: 5px;
     border: none;
@@ -585,7 +587,7 @@ html {
 }
 
 .formContato > div > textarea {
-    background: #806af0;
+    background: #fff;
     margin-top: 5px;
     color: white;
     font-weight: 600;
@@ -599,8 +601,8 @@ html {
     width: 150px;
     padding: 12px;
     /*background: linear-gradient(green, greenyellow);*/
-    background: #6E57E0;
-    color: white;
+    background: #C6F05D;
+    color: #1D1D1F;
     font-weight: 600;
     border: none;
     border-radius: 10px;
@@ -625,6 +627,7 @@ html {
 
 .parteDois {
     display: flex;
+    margin-top: 50px;
 }
 
 .boxes {
@@ -670,8 +673,7 @@ html {
     width: 140px;
     height: 160px;
     /*background: linear-gradient(#202020 , #313131);*/
-    background: linear-gradient(#7766ca9a ,#9e94ce9a );
-    background: #806af0;
+    background-color: #1D1D1F;
     margin-top: 10px;
     margin: auto;
     /*padding: 4rem .8rem 1.70rem 1.8rem;*/
@@ -817,7 +819,7 @@ html {
     padding: 20px;
     margin: auto;
     text-align: center;
-    background: #806ce0;
+    background: #131313;
     border-radius: 20px;
     align-self: center;
 }
@@ -866,6 +868,7 @@ html {
     /*background: linear-gradient(#555555 , #3f3f3f);*/
     background: linear-gradient(#131313 , #272727);
     background: #C6F05D;
+    background-color: #131313;
     max-width: 750px;
     height: 270px;
     margin: auto;
@@ -882,27 +885,27 @@ html {
 .card > img {
     width: 100px;
     height: 120px;
-    background-color: #6E57E0;
+    background-color: #C6F05D;
     grid-area: a;
     border-radius: 50%;
 }
 
 .card > .descricao {
-    background-color: #85A337;
+    background-color: #C6F05D;
     grid-area: b;
     max-width: 500px;
     height: 110px;
     padding: 8px;
     margin: 5px;
     border-radius: 10px;
-    color: white;
+    color: #131313;
     border: 1px groove #e7e7e7;
 }
 
 .card > .mensagemDev {
     grid-area: d;
-    background-color: #85A337;
-    color: white;
+    background-color: #C6F05D;
+    color: #131313;
     border: 1px groove #e7e7e7;
     border-radius: 10px;
     max-width: 600px;
@@ -1008,7 +1011,7 @@ html {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #C6F05D;
-    width: 230px;
+    width: 280px;
     text-align: center;
     box-shadow: 0px 2px 2px #202020;
 }
@@ -1061,6 +1064,23 @@ html {
     font-weight: 400;
     bottom: -172rem;
 }
+/* ============ PLANO ATIVO (EXPLICACAO) ============= */
+
+.explicacao_plano {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.planoAtivo {
+    opacity: 1;
+    visibility: visible;
+    background: #6E57E0;
+    border-radius: 20px;
+}
+
+
+
+
 
 /* =================== MAPA DO SITE ================ */
 
