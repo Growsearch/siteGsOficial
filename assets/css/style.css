@@ -219,6 +219,7 @@ html {
     transition: .5s linear;
     /*background: linear-gradient(#6E57E0, #806ce0);*/
     color: #6E57E0;
+    color: #C6F05D;
     box-shadow: 0px 0px 0px;
 }
 
@@ -580,7 +581,7 @@ html {
 .formContato > div > input {
     width: 400px;
     background-color: #fff;
-    color: white;
+    color: black;
     padding: 5px;
     border: none;
     border-radius: 5px;
@@ -590,6 +591,7 @@ html {
     background: #fff;
     margin-top: 5px;
     color: white;
+    color: black;
     font-weight: 600;
     font-family: var(--body-font);
     padding: 6px;
@@ -809,29 +811,39 @@ html {
     height: 400px;
     width: 650px;
     background: url(imgCss/3.png);
-    background: #f8f8f8;
+    background: #F8F8F8;
+    background: #131313;
     box-shadow: 0px 2px 2px rgb(199, 199, 199);
     padding: 20px 0px 10px 0px;
 }
 
-.fraseMotivacao{
-    width: 450px;
+.partevideos {
+    width: 480px;
     padding: 20px;
     margin: auto;
     text-align: center;
     background: #131313;
+    background: #C6F05D;
     border-radius: 20px;
     align-self: center;
 }
 
-.fraseMotivacao h2 {
+.partevideos h2 {
     color: white; 
+    color: #131313;
     font-weight: 600;
 }
 
-.fraseMotivacao > p {
+.partevideos > p {
     color: #cccccc;
+    color: #202020;
     font-weight: 400;
+}
+
+.propaganda > .video-video {
+    margin: auto;
+    padding-top: 10px;
+    width: 480px;
 }
 
 /*============================ PROJETOS ====================== */
