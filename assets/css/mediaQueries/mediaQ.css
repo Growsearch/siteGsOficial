@@ -14,6 +14,10 @@
         max-width: 100%;
     }
 
+    .main {
+        max-width: 100%;
+    }
+
     .funcionamento {
         width: 70px;
         margin: 0px;
@@ -25,8 +29,8 @@
 
  /*============ parte inicial do site ========= */
     .parteInicio {
-        grid-template-columns: 400px;
-        grid-template-rows: 300px 300px 350px;
+        grid-template-columns: 350px;
+        grid-template-rows: 230px 300px 350px;
         text-align: center;
         align-items: flex-start;
         height: 1100px; 
@@ -46,21 +50,22 @@
     
     .spanTitulo {
         width: 300px;
-        background: #6E57E0;
+        height: 200px;
+        /*background: #6E57E0;*/
         margin: auto;
-        margin-top: 200px;
-        margin-bottom: 200px;
+        margin-top: 63px;
+        margin-bottom: 20px;
     }
     
     .tituloPrincipal {
-        position: relative;
+        position: absolute;
         /*font-size: 1.2rem;*/
         font-size: 20px;
         font-weight: var(--font-light);
         width: 290px;
         text-align: center;
         margin: auto;
-        margin-top: 5px;
+        margin-top: 8px;
     }
 
     .spanTitulo > p {
@@ -69,27 +74,54 @@
         text-align: center;
         margin: auto;
         line-height: 14px;
-        margin-top: 10px;
+        margin-top: 70px;
     }
 
-    #ativarFrase {
-        display: none;
+    .tecnologiasUsadas {
+        margin-left: 100px;
+        top: 200px;
+    }
+
+    #projetosRealizados {
+        margin: 0px;
+        height: 800px;
     }
 
     /* ===== PARTE B INICIO ====== */
 
+    .projetosPagInicio {
+        margin-top: 100px;
+        max-width: 350px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .projetosPagInicio > h3 {
+        font-size: 15px;
+        width: 300px;
+    }
+
     .parteBInicio {
-        margin: 0;
+        margin-bottom: 100px;
         grid-row: 2;
         grid-column: 1;
         height: 420px;
-        max-width: 390px;
-        margin-top: 30px;
+        max-width: 350px;
+        margin-top: 0px;
     }
 
     .estamosProd {
         max-width: 380px;
         font-size: 14px;
+    }
+
+    .estamosProd > h3 {
+        font-size: 15px;
+    }
+
+    .parteBInicio > .estamosProd > p {
+        font-size: 12px;
+        font-weight: lighter;
     }
 
     .imagensProjFuturo {
@@ -103,22 +135,48 @@
         margin-top: 320px;
     }
 
+
+    #projetosRealizados p {
+        color: white;
+    }
+
     .projetosIniciaisContainer {
         display: flex;
         flex-wrap: wrap;
-        max-width: 360px;
+        height: 300px;
+        max-width: 320px;
+        justify-content: space-around;
     }
 
     .projContent {
-        width: 150px;
-        height: 160px;
+        width: 100px;
+        height: 140px;
     }
 
+    .projContent h3 {
+        font-size: 12px;
+    }
 
+    .projContent > h2 {
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .projContent p {
+        font-size: 12px;
+    }
+
+    .buttonContact {
+        position: absolute;
+        margin: 410px 0px 0px 40px;
+        font-size: 15px;
+    }
 
        /* =========== FORMULARIO MODAL ========== */
     .formContato {
         max-width: 330px;
+        margin-top: -21px;
+        height: 393px;
     }   
 
     .formContato > div > label {
@@ -148,53 +206,28 @@
         margin-left: 100px;
     }
 
-/*.modal__form {
-        max-width: 100%;
-    }
+    /*======== PARTE 2 E PROPAGRANDA ============ */
 
-    .formularioGrid {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 350px;
-    }
-
-    .modal__form > label, input{
-        max-width: 320px;
-    }
-
-    .mensagemParaEmail > textarea {
-        max-width: 320px;
-    }
-
-    .text--form {
-        font-size: 16px;
-    }
-
-    .modal__form-close {
-        top: 90px;
-        right: 2px;
-    }*/
-
-/* =============== SERVICES =========== */
-    .services__container {
-        grid-template-columns: repeat(4, 1fr);
+    .parteDois {
         max-width: 400px;
-        height: 250px;
-        overflow-x: scroll;
+        flex-direction: column;
     }
 
-    .services__container::-webkit-scrollbar {
-        height: 8px;
-        background: #e7e7e7;
+    .boxes {
+        width: 350px;
+        height: 520px;
     }
 
-    .services__container::-webkit-scrollbar-thumb {
-        background: #6E57E0;
+    .spanApresentacao {
+        width: 260px;
     }
-
+/* =============== SERVICES =========== */
     .services__content {
-        width: 170px;
-        height: 200px;
+        width: 120px;
+    }
+
+    .services__content > div > h3 {
+        font-size: 12px;
     }
 
     /*======================= SERVICES MODAL ================= */
@@ -213,6 +246,30 @@
     .services__modal-content::-webkit-scrollbar-thumb {
         background-color: #e7e7e7;
         border-radius: 8px;
+    }
+
+
+    /* ============= PROPAGANDA ============ */
+
+    .propaganda {
+        width: 360px;
+    }
+
+    .partevideos {
+        width: 350px;
+    }
+
+    .partevideos h2 {
+        font-size: 15px;
+    }
+
+    .partevideos p {
+        font-size: 13px;
+    }
+
+    .video-video iframe {
+        width: 340px;
+        height: 185px;
     }
 
 

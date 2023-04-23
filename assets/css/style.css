@@ -316,7 +316,7 @@ html {
     position: absolute;
     width: 610px;
     font-size: 42px;
-    font-weight: 600;
+    font-weight: 900;
     margin-top: 55px;
     margin-left: 40px;
     /*color: #e7e7e7;*/
@@ -328,64 +328,63 @@ html {
     content: "|";
 }
 
+.tecnologiasUsadas{
+    position: absolute;
+    top: 320px;
+    margin-left: 260px;
+    width: 130px;
+    
+}
+
+.uil-youtube {
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.uil-instagram-alt {
+    font-size: 25px;
+    color: rgb(139, 0, 76);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.uil-facebook {
+    font-size: 25px;
+    color: blue;
+    cursor: pointer;
+}
+
+/*========== PARTE DAS REDES SOCIAIS INICIO ======== */
 #projetosRealizados {
+    grid-area: c;
     background: #f8f8f8;
+    width: 695px;
     margin-bottom: 20px;
     margin-right: 20px;
     box-shadow: 0px 2px 2px rgb(199, 199, 199);
 
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 10px;
     grid-column: 1;
 }
 
-.ativar {
-    padding: 5px;
-    cursor: pointer;
-    color: blue;
-    /*grid-column: 1;*/
-    grid-area: c;
-}
-
-.ativar:hover {
-    color: #5a45c4;
-}
-
-/* #projetosRealizados > .frase {
-    max-width: 590px;
-    font-size: 16px;
-    /*background: linear-gradient(#131313 , #272727);
-    /*border: 1px solid #6E57E0;
-    /*border: 1px solid grey;
+#projetosRealizados p {
+    color: black;
+    text-align: center;
     padding: 10px;
-    color: white;
-    text-shadow: 0 1px 1px grey;
-    opacity: 0;
-    transform: translateX(10px);
-    margin: 20px 0px 20px 20px;
-    box-shadow: 0 2px 2px #7a7a7acc;
-    grid-column: 1;
-}*/
-
-.frase.animar {
-    animation: slide 1s forwards;
 }
-
-@keyframes slide {
-    to {
-        opacity: 2;
-        transform: translateX(0);
-    }
-}
-
-/*========== PARTE DAS REDES SOCIAIS INICIO ======== */
 
 .projetosPagInicio > h3 {
     text-align: center;
     margin: auto;
-    padding-top: 10px;
+    padding: 10px;
     color: #202020;
-    font-size: 20px;
+    color: #C6F05D;
+    background: #131313;
+    width: 400px;
+    font-size: 25px;
 }
 
  .projetosIniciaisContainer {
@@ -398,18 +397,18 @@ html {
     padding: 5px;
     margin-top: 20px;
     width: 155px;
-    height: 200px;
+    height: 235px;
     box-shadow: 0 2px 2px grey;
     border-radius: 6px;
     /*background: linear-gradient(#806ce0, #5740c7);*/
     background: #1D1D1F;
-    background: #e7e7e7;
     text-align: center;
     color: white;
  }
 
  .projContent > h3 {
     color: #272727;
+    color: white;
     padding-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -421,7 +420,7 @@ html {
     font-weight: bold;
     font-family: var(--body-font);
     text-shadow: 0 2px 2px #131313;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
  } 
 
  .projContent > p {
