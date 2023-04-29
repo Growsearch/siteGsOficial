@@ -133,8 +133,9 @@
 
     #projetosRealizados {
         margin-top: 320px;
+        width: 350px;
+        height: 510px;
     }
-
 
     #projetosRealizados p {
         color: white;
@@ -168,7 +169,7 @@
 
     .buttonContact {
         position: absolute;
-        margin: 410px 0px 0px 40px;
+        margin: 375px 0px 0px 40px;
         font-size: 15px;
     }
 
