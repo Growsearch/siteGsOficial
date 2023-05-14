@@ -402,18 +402,4 @@
          column-gap: 5rem;
      }
  
-     .swiper-portfolio-icon {
-         font-size: 3.5rem;
-     }
- 
-     .swiper-button-prev {
-         left: -3.5rem;
-     }
-     .swiper-button-next {
-         right: -3.5rem;
-     }
- 
-     .swiper-container-horizontal > .swiper-pagination-bullets {
-         bottom: -4.5rem;
-     }
  }

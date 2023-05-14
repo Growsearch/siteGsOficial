@@ -575,9 +575,10 @@ html {
     height: 300px;
     box-shadow: 0 2px 2px grey;
     border-radius: 5px;
-    border: 1px solid #6E57E0;
+    border: 2px solid #036CE4;
     /*background: linear-gradient(#f8f8f8, #f0f0f0);*/
     background: #e7e7e7;
+    background: #1D1D1F;
     align-items: flex-start;
     opacity: 0;
     justify-items: flex-start;
@@ -587,7 +588,8 @@ html {
 
 .formContato > div > label {
     color: #272727;
-    font-weight: 600;
+    color: white;
+    font-weight: 300;
 }
 
 .formContato > div > input {
@@ -597,6 +599,8 @@ html {
     padding: 5px;
     border: none;
     border-radius: 5px;
+
+    font-size: 14px;
 }
 
 .formContato > div > textarea {
@@ -604,7 +608,7 @@ html {
     margin-top: 5px;
     color: white;
     color: black;
-    font-weight: 600;
+    font-weight: 400;
     font-family: var(--body-font);
     padding: 6px;
     border-radius: 5px;
@@ -616,6 +620,7 @@ html {
     padding: 12px;
     /*background: linear-gradient(green, greenyellow);*/
     background: #C6F05D;
+    background: yellow;
     color: #1D1D1F;
     font-weight: 600;
     border: none;
@@ -649,19 +654,22 @@ html {
     height: 400px;
     width: 735px;
     background: #f8f8f8;
+    /*background: #131313;*/
     box-shadow: 0px 2px 2px rgb(199, 199, 199);
     padding: 20px 0px 10px 0px;
 }
 
 .boxes > .section__subtitle {
     color: #f7f7f7;
-    color: #444444;
-    margin-bottom: 10px;
-    font-size: 13px;
+    color: #131313;
+    /*color: #444444;*/
+    margin-bottom: 15px;
+    font-size: 12px;
 }
 
 .h2Apresentacao {
     color: #202020;
+    /*color: #fff;*/
     font-weight: 600;
     font-size: 20px;
     margin-top: 30px;
@@ -709,7 +717,7 @@ html {
 
 .services__title {
     font-size: var(--h3-font-size);
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: var(--mb-1);
     font-weight: 600;
     color: #444444;
@@ -719,6 +727,7 @@ html {
 .services__button {
     cursor: pointer;
     background: #C6F05D;
+    background: #036CE4;
     font-size: 12px;
 }
 
@@ -751,7 +760,7 @@ html {
     background-color: #fefefe;
     padding: 2.5rem;
     border-radius: .5rem;
-    border: 1px solid #5740c7;
+    border: 1px solid #036CE4;
     box-shadow: 0 2px 2px #131313;
     color: #131313;
 }
@@ -775,7 +784,7 @@ html {
 .envolver-conquistas {
     margin-top: 40px;
     max-width: 100%;
-    background-color: #6E57E0;
+    background: #036CE4;
     border-radius: 20px;
 }
 
@@ -828,22 +837,23 @@ html {
     padding: 20px;
     margin: auto;
     text-align: center;
-    background: #131313;
-    background: #C6F05D;
+    background: #141c2b;
     border-radius: 20px;
     align-self: center;
 }
 
 .partevideos h2 {
     color: white; 
-    color: #131313;
+    /*color: #131313;*/
     font-weight: 600;
+    font-size: 20px;
 }
 
 .partevideos > p {
     color: #cccccc;
-    color: #202020;
+    /*color: #202020;*/
     font-weight: 400;
+    font-size: 14px;
 }
 
 .propaganda > .video-video {
@@ -1080,10 +1090,6 @@ html {
     background: #6E57E0;
     border-radius: 20px;
 }
-
-
-
-
 
 /* =================== MAPA DO SITE ================ */
 
