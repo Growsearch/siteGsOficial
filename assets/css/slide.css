@@ -4,6 +4,7 @@ body {
 
 .portfolio {
     background-color: #131313;
+    background: radial-gradient(#1862b6,#131313,  #131313);
 }
 
 ul {
