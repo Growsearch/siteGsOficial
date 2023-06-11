@@ -3,8 +3,7 @@ body {
 }
 
 .portfolio {
-    background-color: #131313;
-    background: radial-gradient(#1862b6,#131313,  #131313);
+    background: #F0F0F0;
 }
 
 ul {
@@ -39,20 +38,18 @@ img {
     border-radius: 10px;
     overflow: hidden;
     /*box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5) ;*/
-    box-shadow: 0 3px 4px #272727;
+    box-shadow: 0 2px 2px #27272781;
     opacity: .8;
     transform: scale(.7);
     transition: .4s;
     color: #272727;
-    color: white;
     text-align: center;
 
     background: #f8f8f8;
-    background: #131313;
 }
 
 .slide li > h2 {
-    background-color: #036CE4;
+    background-color: #2727279a;
     color: #f8f8f8;
     width: 300px;
     text-align: center;
@@ -67,7 +64,7 @@ img {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: white;
+    color: #131313;
 }
 
 .slide li.active {
