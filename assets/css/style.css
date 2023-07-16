@@ -595,6 +595,21 @@ html {
     }
 }
 
+
+
+/*================ CHAT CHARACTER IA ================= */
+.chatbot {
+    position: fixed;
+    top: 600px;
+    right: 50px;
+}
+
+.btn_chatbot {
+    padding: 5px;
+    border-radius: 5px;
+    background: #036CE4;
+}
+
 /* ========================== BOXES (services) ========================= */
 
 .parteDois {
@@ -825,6 +840,11 @@ html {
     box-shadow: 2px 2px 2px grey;
 }
 
+/*  ========== projetos  ============ */
+.portfolio {
+    background: #f8f8f8;
+}
+
 /* =================== PROFISSIONAIS ===================== */
 
 .profissionais {
@@ -846,7 +866,7 @@ html {
     background: linear-gradient(#131313 , #272727);
     background-color: #131313;
     max-width: 750px;
-    height: 270px;
+    height: 330px;
     margin: auto;
     padding: 15px;
     box-shadow: 0 2px 2px #131313cc;
@@ -861,7 +881,7 @@ html {
 .card > img {
     width: 100px;
     height: 120px;
-    background-color: #3692fc;
+    background-color: #747474;
     grid-area: a;
     border-radius: 50%;
 }
@@ -880,8 +900,8 @@ html {
 
 .card > .mensagemDev {
     grid-area: d;
-    background-color: #3692fc;
-    color: #131313;
+    background-color: #4b4b4b;
+    color: #E3E3E3;
     border: 1px groove #e7e7e7;
     border-radius: 10px;
     max-width: 600px;
@@ -894,8 +914,9 @@ html {
 
 .mensagemDev > p {
     padding: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 600;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-weight: 300;
+    font-size: 12px;
 }
 
 /* animando card com js */

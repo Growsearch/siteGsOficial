@@ -1,7 +1,7 @@
 
 body.dark {
     background: #0f0f0f;
-    transition: .6s;
+    transition: .3s;
 }
 
 .checkbox {
@@ -55,11 +55,6 @@ body.dark {
 
 body.dark .tituloPrincipal {
     color: #f8f8f8;
-    color: #008CFF;
-}
-
-body.dark .profissionais {
-    background: #4b4b4b;
 }
 
 body.dark .parteBInicio {
@@ -82,10 +77,22 @@ body.dark #projetosRealizados > .projetosPagInicio > .projetosIniciaisContainer 
 
 body.dark .boxes {
     background: #202020;
+    
 }
 
 body.dark .propaganda {
     background: #202020;
 }
 
+/* ============= projetos ============= */
+body.dark .portfolio {
+    background: #0F0F0F;
+}
 
+
+/* ============= PROFISSIONAIS ============ */
+
+body.dark .profissionais {
+    background: #4b4b4b;
+    background: #202020;
+}
