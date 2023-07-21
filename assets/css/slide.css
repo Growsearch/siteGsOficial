@@ -3,7 +3,29 @@ body {
 }
 
 .portfolio {
+    height: 800px;
     background: #F0F0F0;
+    background: #272727;
+    background: linear-gradient(black, #131313)
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+.titleProjeto {
+    font-style: italic;
+    color: #f8f8f8;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.textProjeto {
+    color: #F0F0F0;
+    margin-left: 20px;
+    text-align: left;
 }
 
 ul {
@@ -37,8 +59,8 @@ img {
 
     border-radius: 10px;
     overflow: hidden;
-    /*box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5) ;*/
-    box-shadow: 0 2px 2px #27272781;
+    /*box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0 2px 2px #27272781;*/
     opacity: .8;
     transform: scale(.7);
     transition: .4s;
@@ -46,10 +68,11 @@ img {
     text-align: center;
 
     background: #f8f8f8;
+    background: none;
 }
 
 .slide li > h2 {
-    background-color: #2727279a;
+    background-color: #272727da;
     color: #f8f8f8;
     width: 300px;
     text-align: center;
@@ -64,6 +87,7 @@ img {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+    margin-top: 8px;
     color: #131313;
 }
 

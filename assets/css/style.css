@@ -1,7 +1,7 @@
 
 /* =============== GOOGLE FONTS ============== */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 :root {
 
     --header-height: 3rem;
@@ -68,11 +68,11 @@ html {
     padding: 2rem 0 4rem;
 }
 
-.section__title {
+/*.section__title {
     font-size: var(--h1-font-size);
-    /*color: #e7e7e7;*/
+    /*color: #e7e7e7;
     color: #202020;
-}
+}*/
 
 .section__subtitle {
     display: block;
@@ -117,7 +117,8 @@ html {
 
 .header {
     position: fixed;
-    background: #1d1d1f9f;
+    background: #ce8908d2;
+    background: #b3df67c4;
     /*background: linear-gradient(#141c2b, #3692fc);*/
     border-bottom: 1px solid #1D1D1F;
     box-shadow: 0 2px 2px grey;
@@ -244,16 +245,15 @@ html {
 }
 
 .spanTitulo {
+    height: 280px;
     margin-top: 100px;
     align-items: flex-start;
     margin-left: 25px;
     margin-right: 20px;
     grid-column: 1;
     grid-area: a;
-    background: #f0f0f0;
-    /*background: linear-gradient(#3692fc, #141c2b);
-    background: url(imgCss/fundo-site2.jpg);*/
     background: url(imgCss/fundoLupa\ \(1\).jpg);
+    background: url(imgCss/fundo-principal.jpg);
     border-radius: 5px;
 }
 
@@ -273,10 +273,11 @@ html {
 }
 
 .tituloPrincipal {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     width: 610px;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 100;
     margin-top: 55px;
     margin-left: 40px;
     /*color: #e7e7e7;*/
@@ -625,6 +626,7 @@ html {
     /*background: #131313;*/
     box-shadow: 0px 2px 2px rgb(199, 199, 199);
     padding: 20px 0px 10px 0px;
+   
 }
 
 .boxes > .section__subtitle {
@@ -727,7 +729,6 @@ html {
     background-color: #fefefe;
     padding: 2.5rem;
     border-radius: .5rem;
-    border: 1px solid black;
     box-shadow: 0 2px 2px #131313;
     color: #131313;
 }
