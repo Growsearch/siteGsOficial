@@ -77,7 +77,11 @@ body.dark #projetosRealizados > .projetosPagInicio > .projetosIniciaisContainer 
 
 body.dark .boxes {
     background: #202020;
-    
+}
+
+body.dark .boxes > .h2Apresentacao {
+    color: white;
+    font-size: 28px;
 }
 
 body.dark .propaganda {

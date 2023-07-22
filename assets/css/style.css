@@ -56,6 +56,7 @@ body {
     /*font-family: 'Chakra Petch', sans-serif;*/
     /*font-family: 'Roboto Condensed', sans-serif;*/
     font-family: 'Rubik', sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
 html {
@@ -103,12 +104,12 @@ html {
 
 /*================== BARRA DE ROLAGEM (SCROLL) ======= */
 ::-webkit-scrollbar {
-    background: #272727;
+    background: #272727ea;
     width: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #e7e7e7;
+    background: #e7e7e767;
     width: 3px;
     border-radius: 20px;
 }
@@ -117,8 +118,7 @@ html {
 
 .header {
     position: fixed;
-    background: #ce8908d2;
-    background: #b3df67c4;
+    background: black;
     /*background: linear-gradient(#141c2b, #3692fc);*/
     border-bottom: 1px solid #1D1D1F;
     box-shadow: 0 2px 2px grey;
@@ -150,8 +150,8 @@ html {
     display: flex;
     margin-right: 50px;
     align-content: center;
-    background-color: #444444;
     background: #131313;
+    background: #7474746b;
     border-radius: 40px;
 }
 
@@ -173,14 +173,16 @@ html {
 }
 
 .menu > li > a:hover {
-    color: #C6F05D;
+    color: #c7e0fd;
 }
 
 .logo > h2 {
     /*background: linear-gradient(#131313, #302f2f);*/
-    border-radius: 20px;
-    color: #e7e7e7;
+    border-radius: 18px;
+    color: #e2e2e2;
     font-family: 'rubik', sans-serif;
+    font-family: 'roboto', sans-serif;
+    font-weight: 200;
     font-size: 28px;
     /*padding: 10px;
     border: 1px groove #131313;
@@ -276,7 +278,7 @@ html {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     width: 610px;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 100;
     margin-top: 55px;
     margin-left: 40px;
@@ -375,6 +377,7 @@ html {
 
  .projContent > h2 {
     color: #757575a9;
+    color: rgba(0, 0, 0, 0.712);
     font-size: 46px;
     font-weight: 300;
     text-shadow: 0 2px 2px #1313138a;
@@ -418,6 +421,7 @@ html {
 }
 
 .estamosProd > h3 {
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     color: #131313;
     /*color: #C6F05D;*/
@@ -433,7 +437,7 @@ html {
 }
 
 .parteBInicio > .estamosProd > p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 13px;
     color: #13131391;
 }
@@ -455,7 +459,7 @@ html {
     height: 170px;
     box-shadow: 0 2px 2px grey;
     border-radius: 5px;
-    background: url(imgCss/1.png);
+    background: url(imgCss/minisidebarytb.jpg);
 }
 
 .imgInicioProj > p {
@@ -468,7 +472,7 @@ html {
     height: 170px;
     padding: 30px 10px 10px 10px;
     opacity: 0.9;
-    background: #747474;
+    background: #272727c0;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -493,8 +497,7 @@ html {
     height: 170px;
     padding: 30px 10px 10px 10px;
     opacity: 0.9;
-    background-color: #6E57E0;
-    background: #747474;
+    background: #272727e3;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -516,6 +519,7 @@ html {
     margin: auto;
     margin-top: 20px;
     color: #036CE4;
+    color: rgb(2, 168, 2);
 }
 
 .buttonContact h3 {
@@ -606,9 +610,9 @@ html {
 }
 
 .btn_chatbot {
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
-    background: #036CE4;
+    background: green;
 }
 
 /* ========================== BOXES (services) ========================= */
@@ -1005,11 +1009,12 @@ html {
 }
 
 .planos__content {
-    background: #4b4b4b;
+    background: #10171f;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #C6F05D;
+    border: 1px solid #131313;
     width: 280px;
+    height: 430px;
     text-align: center;
     box-shadow: 0px 2px 2px #202020;
 }
@@ -1055,7 +1060,7 @@ html {
     position: absolute;
     height: 32px;
     padding: 8px;
-    background: #C6F05D;
+    background: rgb(159, 252, 20);
     color: #131313;
     border-radius: 20px;
     font-size: 11px;
@@ -1080,7 +1085,7 @@ html {
 
 .descricaoMapaSite {
     height: 310px;
-    background: #e7e7e7;
+    background: #272727;
     /*margin: 50px 0px 0px 0px;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1133,5 +1138,5 @@ html {
 
 .footer {
     background: #6E57E0;
-    height: 45px;
+    height: 105px;
 }
