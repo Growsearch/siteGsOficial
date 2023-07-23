@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css">
 
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="conteudo.css">
 
     <title>ProgramPage</title>
@@ -36,13 +37,13 @@
 
             <div class="sidebar__content">
                 <div class="sidebar__list">
-                    <a href="#" class="sidebar__link  active-link">
+                    <a onclick="mostrarConteudo('conteudo1')" href="#" class="sidebar__link  active-link">
                         <i class="ri-home-line"></i>
                         <span class="sidebar__link--name">Home</span>
                         <span class="sidebar__link--floating">Home</span>
                     </a>
 
-                    <a href="#" class="sidebar__link">
+                    <a onclick="mostrarConteudo('conteudo2')" href="#" class="sidebar__link">
                         <i class="ri-compass-3-line"></i>
                         <span class="sidebar__link--name">Explore</span>
                         <span class="sidebar__link--floating">Explore</span>
@@ -133,10 +134,22 @@
 
     <!-- ================= conteudo pagina =============== -->
 
-    <h1> conteudo da pagina</h1>
-    <span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod possimus eum iusto, nesciunt veritatis sequi modi ipsa maiores ipsum ad.</p>
-    </span>
+    <main class="conteudoPrincipal">
+        <div class="conteudo" id="conteudo1">
+            <h1>Java ( spring Boot) </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus a itaque eum molestiae voluptates!</p>
+            <img style="width: 500px;" src="imgs/code.png" alt="">
+            <button>Clique aqui</button>
+        </div>
+
+        <br>
+        <div class="conteudo" id="conteudo2">
+            <h1>javaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus a itaque eum molestiae voluptates!</p>
+            <button>Clique aqui</button>
+        </div>
+
+    </main>
 
     <!-- ========== MAIN =========== -->
 

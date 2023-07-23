@@ -20,3 +20,17 @@ function linkColor() {
 }
 
 sidebarLink.forEach(i => i.addEventListener("click", linkColor));
+
+// sidebar (MUDANÇA DE CONTEUDO)
+
+function mostrarConteudo(idConteudo) {
+    // Esconder todos os conteúdos
+    const conteudos = document.getElementsByClassName('conteudo');
+    for (let i = 0; i < conteudos.length; i++) {
+      conteudos[i].style.display = 'none';
+    }
+  
+    // Mostrar o conteúdo selecionado
+    const conteudoSelecionado = document.getElementById(idConteudo);
+    conteudoSelecionado.style.display = 'block';
+  }
